@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/31bc8b6bf0.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body class="body__index">
+    <div class="modal">
+        <div class="tags__distribution">
+            <div class="modal__close">
+                <i class="fas fa-times" id="x"></i>
+            </div>
+            <h3 id="modal__title"></h3>
+            <p id="modal__text"></p>
+            <div class="btn-flex">
+                <button class="modal--btn" id="rechazar">Rechazar</button>
+                <button class="modal--btn" id="aceptar">Aceptar</button>
+            </div>
+        </div>
+    </div>
+    <header class="header__index">
+        <i class="fas fa-bars" id="hamburger"></i>
+        <nav>
+            <ul>
+                <li><a href="index.html">Ventas Diarias</a></li>
+                <li><a href="estadisticas.html">Estadisticas</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+    <div id="ventas">
+        <h1>VENTAS DIARIAS</h1>
+        <section class= "section__index">
+            <div class= "container__btn">
+                <button class="primary__btn" id="newLine"> Nueva <br> Venta</button><br>
+            </div>
+            <div class="container__lines">
+                <form class="lines__input " id="form--0">
+                    <div class="input__usuarios art">
+                        <input  class="complete complete--short"  id="art--0" name="articulo" type="number" placeholder="Articulo">
+                    </div>
+                    <div class="input__usuario producto">
+                        <select class="complete" id="prod--0" placeholder="Producto">
+                            <option class = "complete--select" value="Vestido">Vestido</option>
+                            <option class = "complete--select" value="Blusa">Blusa</option>
+                            <option class = "complete--select" value="Accesorio">Accesorio</option>
+                            <option class = "complete--select" value="Pantalon">Pantalon</option>
+                        </select>
+                    </div>
+                    <div class="input__usuarios">
+                        <input class="complete" id="descrip--0" type="text" placeholder="Descripcion" >
+                    </div>
+                    <div class="input__usuarios">
+                        <input  class="complete complete--short"  type="number" id="mont--0" placeholder="Importe">
+                    </div>
+                    <div class="input__usuarios">
+                        <select class="complete " id="mp--0">
+                            <option class = "complete--select" value="Credito">Credito</option>
+                            <option class = "complete--select" value="Debito">Debito</option>
+                            <option class = "complete--select" value="Efectivo">Efectivo</option>
+                        </select>
+                    </div>
+                    <div class="input__usuarios">
+                        <input class="complete" type="number" id="desc--0" placeholder="Descuento/Aumento">
+                    </div>
+                    <div class="input__usuarios">
+                        <label for="total" id="labelTotal" >Total</label>
+                        <input class="complete complete--total" disabled type="number" id="total--0">
+                    </div>
+                    <div class= "input__usuarios--boton">
+                        <button class="save" id="btn--0">Ingresar Venta</button>
+                    </div>
+                </form>
+            </div>
+            <button id="endDay"> Cerrar Dia</button>
+        </section>
+    </div>
+    <aside class="resumen">
+        <div class="container__date">
+            <input type="date" name="ventas" form="ventas" id="date">
+        </div>
+        <h2>Resumen de ventas</h2>
+        <div class="resumen__mp resume__mp--credito">
+            <p id="mp-credito">Credito:</p>
+        </div>
+        <div class="resumen__mp resume__mp--debito">
+            <p>Debito:</p>
+        </div>
+        <div class="resumen__mp resume__mp--efectivo">
+            <p>Efectivo: </p>
+        </div>
+        <h4 id="resumenTotal">Ventas totales</h4>
+    </aside>
+    <script src ="https://code.jquery.com/jquery-3.6.0.min.js" > </script>
+    <script src="js/index.js" ></script>
+</body>
+</html>

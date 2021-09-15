@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/31bc8b6bf0.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body class="body__statics">
+    <div class="modal">
+        <div class="tags__distribution">
+            <div class="modal__close">
+                <i class="fas fa-times" id="x"></i>
+            </div>
+            <h3 id="modal__title"></h3>
+            <p id="modal__text"></p>
+            <div class="btn-flex">
+                <button class="modal--btn" id="rechazar">Rechazar</button>
+                <button class="modal--btn" id="aceptar">Aceptar</button>
+            </div>
+        </div>
+    </div>
+    <header class= "header__statics">
+        <div class="header__navbar">
+            <i class="fas fa-bars" id="hamburger"></i>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Ventas Diarias</a></li>
+                    <li><a href="estadisticas.html">Estadisticas</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="currency">
+            <div class="dollar">
+                <h4 class="dollar__title"><i class="fas fa-money-bill green"></i>Dolar Oficial</h4>
+                <div>
+                    <p class="dollar__price compraOf">COMPRA : </p>
+                    <p class="dollar__price ventaOf">VENTA : </p>
+                </div>
+            </div>
+            <div class="dollar">
+                <h4 class="dollar__title"><i class="fas fa-money-bill blue"></i>Dolar Blue</h4>
+                <div>
+                    <p class="dollar__price compraBl">COMPRA :</p>
+                    <p class="dollar__price ventaBl">VENTA :</p>
+                </div>
+            </div>
+    </header>
+    <section class="section__statics">
+        <div class="information__date">
+            <div class="container__date">
+                <input type="date" id="dateStatics">
+                <button id="search"><i class="fas fa-search"></i>  Buscar</button>
+            </div>
+            <table class="table__container">
+                <tr>
+                    <th>ARTICULO</th>
+                    <th>PRODUCTO</th>
+                    <th>MEDIO DE PAGO</th>
+                    <th>PRECIO</th>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <aside class="highlight__info">       
+            <h2 id="info__title">INFORMACIÓN DESTACADA</h2>
+            <div>
+            <div class="info__box info__box--start">
+                <h4 class="info__text info__item--start" value="123" id="ingresos">Ingresos totales<span class="info__item" id= "ingresos--js">&nbsp;$ 0</span> </h4> 
+                <h4 class="info__text info__item--start" id="unidades">Cantidad<span class="info__item" id= "unidades--js">&nbsp;$ 0</span></h4>
+            </div>
+            <div class="info__box ">
+                <h4 class="info__item info__item--title">Porcentaje</h4>
+                <h5 class="info__text" id="credito">Credito:<span class= "credito--js info__item">&nbsp;$ 0</span> </h5>
+                <h5 class="info__text" id="debito">Debito:<span class= "debito--js info__item">&nbsp;$ 0</span> </h5>
+                <h5 class="info__text" id="efectivo">Efectivo:<span class= "efectivo--js info__item">&nbsp;$ 0</span></h5>
+            </div>
+            <div class="info__box ">
+                <h4 class="info__item info__item--title">Impuestos</h4>
+                <h5 class="info__text" id="iva">IVA<span class="info__item" id= "IVA--js">&nbsp;$ 0</span></h5>
+                <h5 class="info__text" id="iibb">IIBB <span class="info__item" id= "iibb--js">&nbsp;$ 0</span></h5>
+            </div>
+            <div>
+                <h4 class="rb" >Resultado Bruto <span class="info__item" id= "rb--js">&nbsp;$ 0</span></h4>
+            </div>
+        </div>
+    </aside>
+    <script src ="https://code.jquery.com/jquery-3.6.0.min.js" > </script>
+    <script src="js/statics.js" ></script>
+    <script src="js/index.js" ></script>
+</body>
+</html>

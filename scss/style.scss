@@ -1,0 +1,11 @@
+$lightgreen: #80ffdb;
+$backgroundLightblue: linear-gradient(125deg, rgba(128,255,219,1) 0%, rgba(72,191,227,1) 29%, rgba(94,96,206,1) 100%);
+$backgroundDarkblue: linear-gradient(125deg, rgba(94,96,206,1) 0%, rgba(4,29,97,1) 100%);
+@mixin sizes($width, $height) {
+    height: $height;
+    width: $width; 
+}
+
+@import "index";
+
+@import "statics";
